@@ -1,6 +1,6 @@
 var Bleacon       = require('bleacon');
 var mqtt          = require('mqtt');
-var underscore    = require('underscore'); 
+var _             = require('underscore'); 
 var client        = mqtt.connect('mqtt://192.168.0.113');
 
 var throttled_publish = _.throttle(function(uuid){
