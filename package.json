@@ -5,7 +5,10 @@
   "main": "server.js",
   "dependencies": {
     "mqtt": "1.4.1", 
-    "bleacon": "0.4.0"
+    "bleacon": "0.4.0", 
+    "noble": "1.1.0", 
+    "bleno": "0.2.1", 
+    "underscore": "1.8.3"
   },
   "engines": {
     "node": "0.12.6"
