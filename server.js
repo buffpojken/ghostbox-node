@@ -3,7 +3,7 @@ var mqtt          = require('mqtt');
 var _             = require('underscore'); 
 var client        = mqtt.connect('mqtt://192.168.0.113');
 
-var throttled_publish = _.throttle(function(uuid){
+var throttled_publish = _.debounce(function(uuid){
   client.publish('btle', uuid); 
 }, 12000); 
 
